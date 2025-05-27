@@ -81,8 +81,8 @@ energy_consumption_forecasting/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/HARIHARANS24/energy_consumption_forecasting.git
-   cd energy_consumption_forecasting
+   git clone https://github.com/BALADURGAG24/energy_consumption_forecasting-model
+   cd energy_consumption_forecasting-model
    ```
 
 2. Set up Python virtual environment and install dependencies:
