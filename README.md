@@ -14,7 +14,7 @@ energy_consumption_forecasting/
 │  
 ├── data/   
 │   ├── raw/                  # Raw source data (immutable)
-│   ├── processed/            # Cleaned and feature-engineered data
+│   ├── processed/            # Cleaned and feature-engineered data 
 │   ├── external/             # External data sources (weather, holidays, etc.)
 │   └── README.md             # Data description and sources info
 │
@@ -176,6 +176,7 @@ Contributions welcome! Please:
 - Ensure tests pass and code is documented
 
 ---
+
 
 
 
