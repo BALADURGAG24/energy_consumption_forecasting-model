@@ -12,7 +12,7 @@ This project provides an end-to-end pipeline for forecasting energy consumption 
 ```plaintext
 energy_consumption_forecasting/ 
 │  
-├── data/    
+├── data/     
 │   ├── raw/                  # Raw source data (immutable)
 │   ├── processed/            # Cleaned and feature-engineered data 
 │   ├── external/             # External data sources (weather, holidays, etc.)
@@ -176,6 +176,7 @@ Contributions welcome! Please:
 - Ensure tests pass and code is documented
 
 ---
+
 
 
 
