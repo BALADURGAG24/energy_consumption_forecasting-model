@@ -1,4 +1,4 @@
-
+ 
 # Energy Consumption Forecasting
  
 ## Project Overview
@@ -176,6 +176,7 @@ Contributions welcome! Please:
 - Ensure tests pass and code is documented
 
 ---
+
 
 
 
