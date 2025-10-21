@@ -10,7 +10,7 @@ This project provides an end-to-end pipeline for forecasting energy consumption 
 ## Project Structure  
     
 ```plaintext
-energy_consumption_forecasting/ 
+energy_consumption_forecasting/  
 │  
 ├── data/     
 │   ├── raw/                  # Raw source data (immutable) 
@@ -176,6 +176,7 @@ Contributions welcome! Please:
 - Ensure tests pass and code is documented
 
 ---
+
 
 
 
