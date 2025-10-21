@@ -8,7 +8,7 @@ This project provides an end-to-end pipeline for forecasting energy consumption 
 ---  
   
 ## Project Structure  
-   
+    
 ```plaintext
 energy_consumption_forecasting/ 
 │  
@@ -176,6 +176,7 @@ Contributions welcome! Please:
 - Ensure tests pass and code is documented
 
 ---
+
 
 
 
