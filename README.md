@@ -7,72 +7,67 @@ This project provides an end-to-end pipeline for forecasting energy consumption 
  
 ---  
   
-## Project Structure  
-    
-```plaintext 
-energy_consumption_forecasting/  
-│   
-├── data/     
-│   ├── raw/                  # Raw source data (immutable) 
-│   ├── processed/            # Cleaned and feature-engineered data 
-│   ├── external/             # External data sources (weather, holidays, etc.)
-│   └── README.md             # Data description and sources info
-│
-├── notebooks/
-│   ├── exploratory_data_analysis.ipynb
-│   ├── feature_engineering.ipynb
-│   └── model_experiments.ipynb
-│
-├── src/
-│   ├── __init__.py
-│   ├── data/
-│   │   ├── data_loader.py            # Load raw & processed data
-│   │   ├── preprocess.py             # Cleaning & preprocessing functions
-│   │   └── feature_engineering.py    # Feature creation & selection
-│   │
-│   ├── models/
-│   │   ├── base_model.py             # Abstract base class for models
-│   │   ├── lstm_model.py             # LSTM deep learning model
-│   │   ├── xgboost_model.py          # XGBoost model
-│   │   └── model_utils.py            # Training, evaluation, saving models
-│   │
-│   ├── evaluation/
-│   │   └── metrics.py                # Custom metrics (RMSE, MAE, MAPE, etc.)
-│   │
-│   ├── utils/
-│   │   ├── config.py                 # Configuration loader (YAML/JSON)
-│   │   ├── logger.py                 # Logging setup
-│   │   └── helpers.py                # Utility functions
-│   │
-│   ├── visualization/
-│   │   └── viz.py                   # Visualization utilities for reports & EDA
-│   │
-│   └── forecasting_pipeline.py      # Main pipeline orchestration
-│
-├── tests/
-│   ├── test_data_loader.py
-│   ├── test_preprocess.py
-│   ├── test_feature_engineering.py
-│   ├── test_models.py
-│   └── test_forecasting_pipeline.py
-│
-├── configs/
-│   ├── config.yaml                  # All hyperparameters, paths, settings
-│   └── logging.yaml                 # Logging configuration
-│
-├── scripts/
-│   ├── run_train.sh                 # Bash script to train model
-│   ├── run_inference.sh             # Bash script for inference
-│   └── setup_env.sh                 # Setup environment (install deps, etc.)
-│
-├── requirements.txt                 # Python dependencies
-├── Dockerfile                      # Containerization for deployment
-├── docker-compose.yml              # Multi-container setup (optional)
-├── README.md
-├── app.py
-├── main.py
-├── LICENSE
-└── .gitignore
+## Project Structure   
+```
+Directory structure:
+└── baladurgag24-energy_consumption_forecasting-model/
+    ├── README.md
+    ├── app.py
+    ├── docker-compose.yml
+    ├── Dockerfile
+    ├── generate_synthetic_data_full.py
+    ├── LICENSE
+    ├── main.py
+    ├── requirements.txt
+    ├── configs/
+    │   ├── config.yaml
+    │   └── logging.yaml
+    ├── data/
+    │   ├── README.md
+    │   └── raw/
+    │       ├── energy_consumption.csv
+    │       └── energy_consumption_dataset.csv
+    ├── models/
+    │   └── xgboost_model.pkl
+    ├── notebooks/
+    │   ├── exploratory_data_analysis.ipynb
+    │   ├── feature_engineering.ipynb
+    │   └── model_experiments.ipynb
+    ├── scripts/
+    │   ├── run_inference.sh
+    │   ├── run_train.sh
+    │   └── setup_env.sh
+    ├── src/
+    │   ├── __init__.py
+    │   ├── forecasting_pipeline.py
+    │   ├── __pycache__/
+    │   ├── data/
+    │   │   ├── data_loader.py
+    │   │   ├── feature_engineering.py
+    │   │   ├── preprocess.py
+    │   │   └── __pycache__/
+    │   ├── evaluation/
+    │   │   ├── metrics.py
+    │   │   └── __pycache__/
+    │   ├── models/
+    │   │   ├── base_model.py
+    │   │   ├── lstm_model.py
+    │   │   ├── model_utils.py
+    │   │   ├── xgboost_model.py
+    │   │   └── __pycache__/
+    │   ├── utils/
+    │   │   ├── config.py
+    │   │   ├── helpers.py
+    │   │   ├── logger.py
+    │   │   └── __pycache__/
+    │   └── visualization/
+    │       └── viz.py
+    └── tests/
+        ├── test_data_loader.py
+        ├── test_feature_engineering.py
+        ├── test_forecasting_pipeline.py
+        ├── test_models.py
+        └── test_preprocess.py
 ```
 
 ---
@@ -176,6 +171,7 @@ Contributions welcome! Please:
 - Ensure tests pass and code is documented
 
 ---
+
 
 
 
